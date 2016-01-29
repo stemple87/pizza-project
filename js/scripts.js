@@ -77,6 +77,9 @@ $(document).ready(function() {
   }
 
   $("#orderInfo").show();
+  $(".pizzaOptions").hide();
+  $(".pricing").hide();
+
   $("#displayPizzaSize").text(pizzaSize);
   $("#displayToppings1").text(pizzaTopping1);
   $("#displayToppings2").text(pizzaTopping2);
