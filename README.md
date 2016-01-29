@@ -1,7 +1,7 @@
 
 # _Pizza Project_
 
-#### _Order Pizza and Your Price will be Displayed, {1/22}_
+#### _Order Pizza and Your Price will be Displayed, 1/22_
 
 #### By _**Simon Temple**_
 

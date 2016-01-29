@@ -19,13 +19,7 @@ Pizza.prototype.price = function() {
   } else if (this.pizzaSize === "Small") {
     sizePrice -= 3;
   }
-  // if (this.topping1 === "Pepperoni " || "Bacon " || "Ham " || "Chicken ") {
-  //   toppingPrice += 2;
-  // } else if (this.topping1 === "Olives ") {
-  //   toppingPrice += 1;
-  // } else {
-  //   toppingPrice += 0;
-  // }
+
   if (this.topping1 === "Pepperoni " || this.topping1 === "Bacon " || this.topping1 === "Chicken " || this.topping1 === "Ham ") {
     toppingPrice += 2;
   } else if (this.topping1 === "Pineapple " || this.topping1 === "Onions " || this.topping1 === "Mushrooms " || this.topping1 === "Olives ") {
@@ -82,7 +76,7 @@ $(document).ready(function() {
     $(".show-ticket").hide();
   }
 
-  $("#OrderInfo").show();
+  $("#orderInfo").show();
   $("#displayPizzaSize").text(pizzaSize);
   $("#displayToppings1").text(pizzaTopping1);
   $("#displayToppings2").text(pizzaTopping2);
