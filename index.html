@@ -11,111 +11,126 @@
   <body>
     <div class="container">
       <h1>Simon's Pizza</h1>
-      <p class="lead">Select your pizza options:</p>
-
-      <!-- <form id="pizzaOptions">
-        <div class= "form-group">
-          <label for="quantity">Select Quantity</label>
-          <select id="quantity">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
-        </div> -->
-
-
-        <div class= "form-group">
-          <label for="pizzaSize">Select Size</label>
-          <select id="pizzaSize">
-            <option value="">Select a size</option>
-            <option value="Small">Small</option>
-            <option value="Medium">Medium</option>
-            <option value="Large">large</option>
-            <option value="X-Large">X-large</option>
-          </select>
+      <div class="row">
+        <div class="col-md-8">
+          <p class="lead">Select your pizza options:</p>
+          <form id="pizzaOptions">
+            <div class= "form-group">
+              <label for="pizzaSize">Select Size</label>
+              <select id="pizzaSize">
+                <option value="">Select a size</option>
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">large</option>
+                <option value="X-Large">X-large</option>
+              </select>
+            </div>
+            <div class= "form-group">
+              <label for="pizzaTopping1">Topping 1</label>
+              <select id="pizzaTopping1">
+                <option value="">Add topping</option>
+                <option value="Pepperoni ">Pepperoni</option>
+                <option value="Bacon ">Bacon</option>
+                <option value="Ham ">Ham</option>
+                <option value="Chicken ">Chicken</option>
+                <option value="Pineapple ">Pineapple</option>
+                <option value="Onions ">Onions</option>
+                <option value="Mushrooms ">Mushrooms</option>
+                <option value="Olives ">Olives</option>
+              </select>
+            </div>
+            <div class= "form-group">
+              <label for="pizzaTopping2">Topping 2</label>
+              <select id="pizzaTopping2">
+                <option value="">Add topping</option>
+                <option value="Pepperoni ">Pepperoni</option>
+                <option value="Bacon ">Bacon</option>
+                <option value="Ham ">Ham</option>
+                <option value="Chicken ">Chicken</option>
+                <option value="Pineapple ">Pineapple</option>
+                <option value="Onions ">Onions</option>
+                <option value="Mushrooms ">Mushrooms</option>
+                <option value="Olives ">Olives</option>
+              </select>
+            </div>
+            <p id="toggle">Click here to add more toppings</p>
+            <div id="toggleShowing">
+            <div class= "form-group">
+              <label for="pizzaTopping3">Topping3</label>
+              <select id="pizzaTopping3">
+                <option value="">Add topping</option>
+                <option value="Pepperoni ">Pepperoni</option>
+                <option value="Bacon ">Bacon</option>
+                <option value="Ham ">Ham</option>
+                <option value="Chicken ">Chicken</option>
+                <option value="Pineapple ">Pineapple</option>
+                <option value="Onions ">Onions</option>
+                <option value="Mushrooms ">Mushrooms</option>
+                <option value="Olives ">Olives</option>
+              </select>
+            </div>
+            <div class= "form-group">
+              <label for="pizzaTopping4">Topping4</label>
+              <select id="pizzaTopping4">
+                <option value="">Add topping</option>
+                <option value="Pepperoni ">Pepperoni</option>
+                <option value="Bacon ">Bacon</option>
+                <option value="Ham ">Ham</option>
+                <option value="Chicken ">Chicken</option>
+                <option value="Pineapple ">Pineapple</option>
+                <option value="Onions ">Onions</option>
+                <option value="Mushrooms ">Mushrooms</option>
+                <option value="Olives ">Olives</option>
+              </select>
+            </div>
+            <div class= "form-group">
+              <label for="pizzaTopping5">Topping 5</label>
+              <select id="pizzaTopping5">
+                <option value="">Add topping</option>
+                <option value="Pepperoni ">Pepperoni</option>
+                <option value="Bacon ">Bacon</option>
+                <option value="Ham ">Ham</option>
+                <option value="Chicken ">Chicken</option>
+                <option value="Pineapple ">Pineapple</option>
+                <option value="Onions ">Onions</option>
+                <option value="Mushrooms ">Mushrooms</option>
+                <option value="Olives ">Olives</option>
+              </select>
+            </div>
+            </div>
+            <button type="submit" id="button" class="btn btn-primary">Click here to view your order</button>
+          </form>
         </div>
-        <div class= "form-group">
-          <label for="pizzaTopping1">Topping 1</label>
-          <select id="pizzaTopping1">
-            <option value="">Select a Style</option>
-            <option value="Pepperoni ">Pepperoni</option>
-            <option value="Bacon ">Bacon</option>
-            <option value="Ham ">Ham</option>
-            <option value="Chicken ">Chicken</option>
-            <option value="Pineapple ">Pineapple</option>
-            <option value="Onions ">Onions</option>
-            <option value="Mushrooms ">Mushrooms</option>
-            <option value="Olives ">Olives</option>
-          </select>
+        <div class="col-md-4">
+          <h4>Pricing</h4>
+          <p>Price for cheese pizza</p>
+          <ul>
+            <li>Small: $10</li>
+            <li>Medium: $13</li>
+            <li>Large: $16</li>
+            <li>X-Large: $19</li>
+          </ul>
+          <p>Additional toppings for $1<p>
+            <ul>
+              <li>Pineapple</li>
+              <li>Onions</li>
+              <li>Mushrooms</li>
+              <li>Olives</li>
+            </ul>
+            <p>Additional toppings for $2</p>
+            <ul>
+            <li>Pepperoni</li>
+            <li>Chicken</li>
+            <li>Ham</li>
+            <li>Bacon</li>
+            </ul>
         </div>
-        <div class= "form-group">
-          <label for="pizzaTopping2">Topping 2</label>
-          <select id="pizzaTopping2">
-            <option value="">Select a Style</option>
-            <option value="Pepperoni ">Pepperoni</option>
-            <option value="Bacon ">Bacon</option>
-            <option value="Ham ">Ham</option>
-            <option value="Chicken ">Chicken</option>
-            <option value="Pineapple ">Pineapple</option>
-            <option value="Onions ">Onions</option>
-            <option value="Mushrooms ">Mushrooms</option>
-            <option value="Olives ">Olives</option>
-          </select>
-        </div>
-        <p id="toggle">Click here to add more toppings</p>
-        <div class="toggle">
-          <div class= "form-group">
-            <label for="pizzaTopping3">Topping3</label>
-            <select id="pizzaTopping3">
-              <option value="">Select a Style</option>
-              <option value="Pepperoni ">Pepperoni</option>
-              <option value="Bacon ">Bacon</option>
-              <option value="Ham ">Ham</option>
-              <option value="Chicken ">Chicken</option>
-              <option value="Pineapple ">Pineapple</option>
-              <option value="Onions ">Onions</option>
-              <option value="Mushrooms ">Mushrooms</option>
-              <option value="Olives ">Olives</option>
-            </select>
-          </div>
-          <div class= "form-group">
-            <label for="pizzaTopping4">Topping4</label>
-            <select id="pizzaTopping4">
-              <option value="">Select a Style</option>
-              <option value="Pepperoni ">Pepperoni</option>
-              <option value="Bacon ">Bacon</option>
-              <option value="Ham ">Ham</option>
-              <option value="Chicken ">Chicken</option>
-              <option value="Pineapple ">Pineapple</option>
-              <option value="Onions ">Onions</option>
-              <option value="Mushrooms ">Mushrooms</option>
-              <option value="Olives ">Olives</option>
-            </select>
-          </div>
-          <div class= "form-group">
-            <label for="pizzaTopping5">Topping 5</label>
-            <select id="pizzaTopping5">
-              <option value="">Select a Style</option>
-              <option value="Pepperoni ">Pepperoni</option>
-              <option value="Bacon ">Bacon</option>
-              <option value="Ham ">Ham</option>
-              <option value="Chicken ">Chicken</option>
-              <option value="Pineapple ">Pineapple</option>
-              <option value="Onions ">Onions</option>
-              <option value="Mushrooms ">Mushrooms</option>
-              <option value="Olives ">Olives</option>
-            </select>
-          </div>
       </div>
-        <button type="submit" id="button" class="btn btn-primary">Click here to view your order</button>
-      </form>
       <div id="OrderInfo">
         <h2>Your Order Information</h2>
         <p>Size: <span id=displayPizzaSize></span></p>
 
-        <p>Toppings: <span id="displayToppings1"></span><span id="displayToppings2"></span><span id="displayToppings3"></span><span id="displayToppings3"></span><span id="displayToppings4"></span><span id="displayToppings5"></span></p>
+        <p>Additional Toppings: <span id="displayToppings1"></span><span id="displayToppings2"></span><span id="displayToppings3"></span><span id="displayToppings3"></span><span id="displayToppings4"></span><span id="displayToppings5"></span></p>
         <br>
         <p>Your total cost: <span id="displayPrice"></span></p>
 

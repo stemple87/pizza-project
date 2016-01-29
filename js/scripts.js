@@ -9,43 +9,57 @@ function Pizza(topping1, topping2, topping3, topping4, topping5, pizzaSize, quan
 }
 
 Pizza.prototype.price = function() {
-  var price = 13;
-  if (Pizza.topping1 === "Pepperoni" || "Bacon" || "Chicken" || "Ham") {
-    price += 2;
-  } else if (Pizza.topping1 === "Pineapple" || "Onions" || "Mushrooms" || "Olives"){
-    price +=1;
+  var sizePrice = 16;
+  var toppingPrice = 0;
+  var price = 0;
+  if (this.pizzaSize === "X-Large") {
+    sizePrice += 6;
+  } else if (this.pizzaSize === "Large") {
+    sizePrice += 3;
+  } else if (this.pizzaSize === "Small") {
+    sizePrice -= 3;
   }
-  if (Pizza.topping2 === "Pepperoni" || "Bacon" || "Chicken" || "Ham") {
-    price += 2;
-  } else if (Pizza.topping2 === "Pineapple" || "Onions" || "Mushrooms" || "Olives"){
-    price +=1;
+  // if (this.topping1 === "Pepperoni " || "Bacon " || "Ham " || "Chicken ") {
+  //   toppingPrice += 2;
+  // } else if (this.topping1 === "Olives ") {
+  //   toppingPrice += 1;
+  // } else {
+  //   toppingPrice += 0;
+  // }
+  if (this.topping1 === "Pepperoni " || this.topping1 === "Bacon " || this.topping1 === "Chicken " || this.topping1 === "Ham ") {
+    toppingPrice += 2;
+  } else if (this.topping1 === "Pineapple " || this.topping1 === "Onions " || this.topping1 === "Mushrooms " || this.topping1 === "Olives ") {
+    toppingPrice +=1;
   }
-  if (Pizza.topping3 === "Pepperoni" || "Bacon" || "Chicken" || "Ham") {
-    price += 2;
-  } else if (Pizza.topping3 === "Pineapple" || "Onions" || "Mushrooms" || "Olives"){
-    price +=1;
+  if (this.topping2 === "Pepperoni " || this.topping2 === "Bacon " || this.topping2 === "Chicken " || this.topping2 === "Ham ") {
+    toppingPrice += 2;
+  } else if (this.topping2 === "Pineapple " || this.topping2 === "Onions " || this.topping2 === "Mushrooms " || this.topping2 === "Olives ") {
+    toppingPrice +=1;
   }
-  if (Pizza.topping4 === "Pepperoni" || "Bacon" || "Chicken" || "Ham") {
-    price += 2;
-  } else if (Pizza.topping4 === "Pineapple" || "Onions" || "Mushrooms" || "Olives"){
-    price +=1;
+  if (this.topping3 === "Pepperoni " || this.topping2 === "Bacon " || this.topping2 === "Chicken " || this.topping2 === "Ham ") {
+    toppingPrice += 2;
+  } else if (this.topping3 === "Pineapple " || this.topping3 === "Onions " || this.topping3 === "Mushrooms " || this.topping3 === "Olives ") {
+    toppingPrice +=1;
   }
-  if (Pizza.topping5 === "Pepperoni" || "Bacon" || "Chicken" || "Ham") {
-    price += 2;
-  } else if (Pizza.topping5 === "Pineapple" || "Onions" || "Mushrooms" || "Olives"){
-    price +=1;
+  if (this.topping4 === "Pepperoni " || this.topping4 === "Bacon " || this.topping4 === "Chicken " || this.topping4 === "Ham ") {
+    toppingPrice += 2;
+  } else if (this.topping4 === "Pineapple " || this.topping4 === "Onions " || this.topping4 === "Mushrooms " || this.topping4 === "Olives ") {
+    toppingPrice +=1;
   }
-  if (Pizza.pizzaSize === "X-Large") {
-    price += 6;
-  } else if (Pizza.pizzaSize === "Large") {
-    price += 3;
-  } else if (Pizza.pizzaSize === "Small"){
-    price -= 3;
+  if (this.topping5 === "Pepperoni " || this.topping5 === "Bacon " || this.topping5 === "Chicken " || this.topping5 === "Ham ") {
+    toppingPrice += 2;
+  } else if (this.topping5 === "Pineapple " || this.topping5 === "Onions " || this.topping5 === "Mushrooms " || this.topping5 === "Olives ") {
+    toppingPrice +=1;
   }
+
   // price = price * Pizza.quantity;
+  price = sizePrice + toppingPrice;
   return price;
 }
 $(document).ready(function() {
+  $("p#toggle").click(function() {
+    $("#toggleShowing").toggle();
+  });
   $("form#pizzaOptions").submit(function(event) {
   event.preventDefault();
 
@@ -67,7 +81,6 @@ $(document).ready(function() {
     return alert("Please select a size");
     $(".show-ticket").hide();
   }
-
 
   $("#OrderInfo").show();
   $("#displayPizzaSize").text(pizzaSize);

@@ -1,3 +1,7 @@
 #OrderInfo {
   display: none;
 }
+
+#toggleShowing {
+  display: none;
+}
