@@ -4,6 +4,7 @@
   background-color: #ECCC72;
   padding: 10%;
   border: black dotted 1px;
+  margin-top: 10px;
 }
 
 #toggleShowing {
@@ -68,5 +69,10 @@ ul {
 
 
 p#toggle {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+p#toggle:hover {
   text-decoration: underline;
 }
