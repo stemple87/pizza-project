@@ -1,7 +1,7 @@
 
 # _Pizza Project_
 
-#### _Order Pizza and Your Price will be Displayed, 1/22_
+#### _Order Pizza and Your Price will be Displayed, 1/29_
 
 #### By _**Simon Temple**_
 
@@ -15,7 +15,7 @@ _This is a project that tests our knowledge of constructors and prototypes. It w
 
 ## Known Bugs
 
-_None yet_
+_Could not get the quantity option working so I removed it from index.html_
 
 ## Support and contact details
 
